@@ -86,7 +86,7 @@ To access the database, use Dbeaver or MySQLWorkbench, which shows a history of 
 
 <br>
 
-## Project create by:
+## Project created by:
 
 - **[Jones Tavares](https://github.com/johnnybigoo)**
 
