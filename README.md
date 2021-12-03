@@ -34,7 +34,18 @@ storing data on the intervention table and also creating a ticket with Zendesk A
 
 After filling and submitting an Intervention form, a new ticket will be created and send to the team. For to do that we are using Zendesk API, that we have integrated to this project.
 
-## Installation
+<hr>
+
+## REST_API Website deployed
+
+* ### [https://jt-rocket-rest-api.herokuapp.com/api/](https://jt-rocket-rest-api.herokuapp.com/api/)
+
+``You will find more details about this second project below``
+
+
+<br>
+
+## Installation Ruby on Rails Prject
 
 Clone or download the .zip for this project. 
 
@@ -71,6 +82,59 @@ Forms are accessible to all users (with or without accounts). Once a “Contact 
 
 To access the database, use Dbeaver or MySQLWorkbench, which shows a history of data stored in the server. The fictitious and real data covers the last 3 years of activity from companies. Graphical representations and charts will also be available in the stats page of the website. 
 
+<br><hr>
+
+## Rocket-Elevators-Foundation-REST_API
+
+<br>
+
+This is the second project for the Consolidation week-9.
+
+<br>
+
+We developed a REST API using C # and .NET Core to allow us to know and to manipulate the status of all the Intervention entitie of the operational database.
+
+<br>
+
+## REST_API Website deployed
+[https://jt-rocket-rest-api.herokuapp.com/api/](https://jt-rocket-rest-api.herokuapp.com/api/)
+
+<br><hr>
+
+#### Postman Collection: [Click here](https://www.getpostman.com/collections/e4e59684cb5aa3398d7d)
+
+<hr><br>
+
+## Intervention Controller
+<br>
+
+### GET: Returns all fields of all intervention Request records that do not have a start date and are in "Pending" status.
+```[HttpGet]```
+[Example](https://jt-rocket-rest-api.herokuapp.com/api/interventions)
+
+This request will gather all the Intervention made and that the status is equals 0 = "Pending"
+
+<br>
+
+### PUT: Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).
+```[HttpPut("start/{id}")]```
+[Example](https://jt-rocket-rest-api.herokuapp.com/api/interventions/start/{id})
+
+This request will put in the Intervention {id} choose an Start and that the status will be changed to 1 = "Incomplete".
+
+Don't forget to edit the {id} with the desired status.
+
+<br>
+
+### PUT: Change the status of the request for action to "Completed" and add an end date and time (Timestamp).
+
+```[HttpPut("end/{id}")]```
+[Example](https://jt-rocket-rest-api.herokuapp.com/api/interventions/end{id})
+
+This request will put in the Intervention {id} choose an End and that the status will be changed to 2 = "Complete".
+
+Don't forget to edit the {id} with the desired status.
+
 <br>
 
 ## Built With
@@ -82,6 +146,7 @@ To access the database, use Dbeaver or MySQLWorkbench, which shows a history of 
 * [JQuery](https://jquery.com)
 * [Postgres V-10.18](https://www.postgresql.org/docs/10/release-10-18.html)
 * [Zendesk API Quick Start](https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/)
+* [Heroku](heroku.com)
 
 
 <br>
