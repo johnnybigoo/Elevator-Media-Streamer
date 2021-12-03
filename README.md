@@ -20,7 +20,7 @@
 
 Rocket Elevators Foundation is the 9th week project for the Odyssey 14 weeks program in CodeBoxx. 
 
-By the 9th week We have created an INTERVENTION page that will be reponsible to send the intervention requests to MySql Database
+By the 9th week We have created an INTERVENTION page that will be responsible to send the Intervention requests to MySql Database
 storing data on the intervention table and also creating a ticket with Zendesk API
 
 
