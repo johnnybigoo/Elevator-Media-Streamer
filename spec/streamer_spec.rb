@@ -1,5 +1,5 @@
 require 'elevator_media/streamer'
-
+require 'pry'
 
 
 RSpec.describe "Streamer" do
@@ -22,6 +22,16 @@ RSpec.describe "Streamer" do
       result = streamer.get_content
       expect(streamer).to respond_to(:get_content)
       expect(result.include?('temp')).to eq(true)
+    end
+  end
+
+  streamer = ElevatorMedia::Streamer.new
+
+  context "open weather test" do
+    it "should respond to get_open_weather" do
+      binding.pry
+      url = streamer.get_open_weather
+      expect(url).to eq("TESTE")
     end
   end
 end
