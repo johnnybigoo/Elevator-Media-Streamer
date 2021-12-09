@@ -32,5 +32,5 @@ db/migrate/addresses-us-1000.json
 
 /config/local_env.yml
 
-.env.test
 .env.local
+.env.test.local
