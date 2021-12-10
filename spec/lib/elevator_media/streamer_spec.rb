@@ -19,6 +19,7 @@ RSpec.describe ElevatorMedia::Streamer do
   context "streamer is fetching content" do
     it "should respond to the getContent method" do
       result = streamer.get_content
+      # binding.pry
       # expect(streamer).to respond_to(:get_content)
       expect(result.include?('temp')).to eq(true)
     end

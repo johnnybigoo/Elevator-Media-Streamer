@@ -18,32 +18,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Rocket Elevators Foundation is the 9th week project for the Odyssey 14 weeks program in CodeBoxx. 
+Rocket Elevators Media Streamer is the 10th week project for the Odyssey 14 weeks program in CodeBoxx. 
 
-By the 9th week We have created an INTERVENTION page that will be responsible to send the Intervention requests to MySql Database
-storing data on the intervention table and also creating a ticket with Zendesk API
+By the 10th week We have created TDD  (Test-Driven Development) tests using the principle:
 
-
-<br>
-
-## Website deployed
-
-* ### [rocketelevators-jt.com/](https://rocketelevators-jt.com//)
+1. Write a test that fails
+2. Pass it on
+3. Refactoring your code.
 
 <br>
-
-After filling and submitting an Intervention form, a new ticket will be created and send to the team. For to do that we are using Zendesk API, that we have integrated to this project.
 
 <hr>
-
-## REST_API Website deployed
-
-* ### [https://jt-rocket-rest-api.herokuapp.com/api/](https://jt-rocket-rest-api.herokuapp.com/api/)
-
-``You will find more details about this second project below``
-
-
-<br>
 
 ## Installation Ruby on Rails Prject
 
@@ -66,8 +51,9 @@ Here are the commands that will have to be entered in your terminal when modific
 - rails db:seed
 
 <br>
+<hr>
 
-## Accessing
+## Acessing
 
 By clicking on “Login”, users will be redirected to a page and be asked to provide an email address and password.
 	
@@ -84,58 +70,20 @@ To access the database, use Dbeaver or MySQLWorkbench, which shows a history of 
 
 <br><hr>
 
-## Rocket-Elevators-Foundation-REST_API
+## To Perform a test
 
 <br>
 
-This is the second project for the Consolidation week-9.
+To perform all the tests go to the IDE Terminal and run: 
+
+`bundle exec rspec .`
+
+
 
 <br>
 
-We developed a REST API using C # and .NET Core to allow us to know and to manipulate the status of all the Intervention entitie of the operational database.
 
-<br>
 
-## REST_API Website deployed
-[https://jt-rocket-rest-api.herokuapp.com/api/](https://jt-rocket-rest-api.herokuapp.com/api/)
-
-<br><hr>
-
-#### Postman Collection: [Click here](https://www.getpostman.com/collections/e4e59684cb5aa3398d7d)
-
-<hr><br>
-
-## Intervention Controller
-<br>
-
-### GET: Returns all fields of all intervention Request records that do not have a start date and are in "Pending" status.
-```[HttpGet]```
-[Example](https://jt-rocket-rest-api.herokuapp.com/api/interventions)
-
-This request will gather all the Intervention made and that the status is equals 0 = "Pending"
-
-<br>
-
-### PUT: Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).
-```[HttpPut("start/{id}")]```
-[Example](https://jt-rocket-rest-api.herokuapp.com/api/interventions/start/{id})
-
-This request will put in the Intervention {id} choose an Start and that the status will be changed to 1 = "Incomplete".
-
-Don't forget to edit the {id} with the desired status.
-
-<br>
-
-### PUT: Change the status of the request for action to "Completed" and add an end date and time (Timestamp).
-
-```[HttpPut("end/{id}")]```
-[Example](https://jt-rocket-rest-api.herokuapp.com/api/interventions/end{id})
-
-This request will put in the Intervention {id} choose an End and that the status will be changed to 2 = "Complete".
-
-Don't forget to edit the {id} with the desired status.
-
-<br>
 
 ## Built With
 
