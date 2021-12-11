@@ -1,4 +1,4 @@
-require 'dotenv'
+require 'spec_helper'
 require 'uri'
 require 'net/http'
 require 'openssl'
@@ -24,7 +24,7 @@ module ElevatorMedia
       request = Net::HTTP::Get.new(uri) 
       response = http.request(request)
 
-      return JSON[response.body] if response.is_a?(Net::HTTPSuccess)
+      response
     end
 
     def get_content
@@ -37,12 +37,11 @@ module ElevatorMedia
 
       request = Net::HTTP::Get.new(uri)
       request["x-rapidapi-host"] = ENV['WEATHER_HOST']
-      request["x-rapidapi-key"] = ENV['WEATHER_KEY']  
+      request["x-rapidapi-key"] = ENV['WEATHER_KEY']
       
       response = http.request(request)
-      # puts response.read_body
 
-      return JSON[response.body] if response.is_a?(Net::HTTPSuccess)
+      response
       end
     end
   end

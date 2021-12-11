@@ -1,4 +1,4 @@
-module TddDemo
+# module TddDemo
   class StringCalculator
     def self.add(input)
       # input.size
@@ -14,4 +14,4 @@ module TddDemo
       {size: string_parsed_size,  value: string_parsed}
     end
   end
-end
+

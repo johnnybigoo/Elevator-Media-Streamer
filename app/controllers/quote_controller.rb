@@ -1,4 +1,8 @@
 class QuoteController < ApplicationController
+  def index
+    @quote = Quote.all
+  end
+  
   def create 
     @quote = Quote.new(quote_params)
     @quote.numApartment = params[:quote][:numBusinessRooms] if params[:quote][:numBusinessRooms].present?

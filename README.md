@@ -72,36 +72,41 @@ To access the database, use Dbeaver or MySQLWorkbench, which shows a history of 
 
 ## To Perform a test
 
-<br>
 
 To perform all the tests go to the IDE Terminal and run: 
 
-`bundle exec rspec .`
-
-
+  `bundle exec rspec .`
 
 <br>
 
+We could monitoring the % of tests by running this command
 
+  `open coverage/index.html`
 
-
-## Built With
-
-* [Ruby V-2.6.6](https://www.ruby-lang.org/en/)
-* [Rails V-5.2.6](https://guides.rubyonrails.org/)
-* [MySql V-5.7](https://dev.mysql.com/)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Postgres V-10.18](https://www.postgresql.org/docs/10/release-10-18.html)
-* [Zendesk API Quick Start](https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/)
-* [Heroku](heroku.com)
-
+it will open a monitoring page provided by [simplecov](https://github.com/simplecov-ruby/simplecov) gem
 
 <br>
 
-## Project created by:
+To run specific tests: 
 
-- **[Jones Tavares](https://github.com/johnnybigoo)**
+  - For tdd_demo, run this command:
+
+  `bundle exec rspec spec/string_calculator_spec.rb`
+
+<br>
+
+  - For streamer_media, run this command:
+
+  `bundle exec rspec spec/lib/elevator_media/streamer_spec.rb`
+
+<br>
+
+  - For controllers/interventions_controller, run this command:
+
+  `bundle exec rspec spec/controllers/interventions_controller_spec.rb`
+
+<br>
+
 
 
 

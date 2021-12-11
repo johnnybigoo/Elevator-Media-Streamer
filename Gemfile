@@ -53,6 +53,8 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'pry-rails'
   gem 'jazz_fingers'
+  gem "webmock"
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -109,3 +111,5 @@ gem "zendesk_api"
 gem 'ed25519', '>= 1.2', '< 2.0'
 
 gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+
+gem 'simplecov', require: false, group: :test
