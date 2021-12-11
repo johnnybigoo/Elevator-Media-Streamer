@@ -92,4 +92,17 @@ RSpec.describe InterventionsController, :type => :controller do
     end
   end
 
+  describe "GET interventionGetData" do
+    it "has a 200 status code new Intervention" do
+      get :new
+      expect(response.status).to eq(200)
+    end
+  end
+
+  describe "responds to" do
+    it "responds to html by default, create Intervention" do
+      post :create, :params => {:intervention => {:employee_id => "Employee", :customer_id => "Customer", :building_id => "Building", :column_id => "Column", :elevator_id => "Elevator", :report => "Report"}}
+      expect(response.content_type).to eq "text/html"
+    end
+  end
 end
